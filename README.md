@@ -18,3 +18,4 @@ of the price (Zestimate). So, in fact we are predicting, where Zillow’s Zestim
 where it will be bad.
 However, we don’t have to predict a single value, but instead for 6 different time points (from October
 2016 to December 2017)
+Further details on the project can be found from kaggle - https://www.kaggle.com/c/zillow-prize-1

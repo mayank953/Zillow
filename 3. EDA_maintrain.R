@@ -72,7 +72,7 @@ cormat = cor(num)
 
 # highly corelated variables can be easily deleted with the help of these two.
 
-
+#cormat is removed to save space
 rm(cormat)
 
 
@@ -133,6 +133,7 @@ test = properties
 test[,"month"] = NA
 test$month = as.factor(test$month)
 train = main_train[!duplicated(main_train[,1]),]
+
 #---------------- deleting rows from test present in main_train- ---------#
 
 test[!(test$parcelid %in% main_train$parcelid),]
@@ -147,7 +148,7 @@ rm(train,factor_data,num,properties,my_func)
 
 # missing_values <- test %>% summarize_each(funs(sum(is.na(.))/n()))
 
-# test [ is.na(test)] = 0          #filling in all missing value with 0
+# test [ is.na(test)] = 0          #filling in all missing value with 0 or any other say -1 if required
 
 # -----------------------------------------------------------------------#
 #          analysis upto this point in train + test.Rdata                #

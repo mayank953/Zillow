@@ -46,4 +46,5 @@ results <- data.table(parcelid=test$parcelid,
                       '201712'=pred_target
 )
 
+#submission file
 write.csv(results, file = "submission_xg.csv", row.names = FALSE)
